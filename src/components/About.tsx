@@ -2,7 +2,7 @@ import { Palette, Video, Sparkles } from "lucide-react";
 
 const About = () => {
   const tools = [
-    "Photoshop", "Canva", "Figma", "CapCut", "Premiere Pro", "After Effects"
+    "Premiere Pro", "Davinci Resolve", "Illustrator", "Photoshop", "After Effects", "Canva", "Figma"
   ];
 
   return (
@@ -45,7 +45,7 @@ const About = () => {
           <div className="animate-slide-in-right space-y-6">
             <div className="bg-card p-6 rounded-xl border border-border card-hover">
               <Palette className="w-8 h-8 text-primary mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Graphic Design</h3>
+              <h3 className="text-xl font-semibold mb-3">Graphic Designing</h3>
               <p className="text-muted-foreground">
                 Creating stunning visuals, brand identities, and marketing materials that capture attention and communicate effectively.
               </p>
@@ -61,9 +61,9 @@ const About = () => {
             
             <div className="bg-card p-6 rounded-xl border border-border card-hover">
               <Sparkles className="w-8 h-8 text-primary mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Creative Direction</h3>
+              <h3 className="text-xl font-semibold mb-3">UI/UX & Logo Designing</h3>
               <p className="text-muted-foreground">
-                Bringing vision to life with strategic creative direction that aligns with brand goals and audience needs.
+                Designing seamless digital experiences and iconic brand logos that enhance usability and leave a lasting impression.
               </p>
             </div>
           </div>
