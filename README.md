@@ -1,5 +1,5 @@
 
-# Scorchz Visuals Portfolio
+# Scorchz Portfolio
 
 A modern and responsive portfolio website built to showcase my design and development work, including projects, visuals, and creative ideas.
 
@@ -49,8 +49,8 @@ To run this project locally:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/scorchz-visuals.git
-cd scorchz-visuals
+git clone https://github.com/your-username/Portfolio-Design.git
+cd Portfolio-Design
 
 # 2. Install dependencies
 npm install
@@ -65,7 +65,8 @@ Then open your browser and go to `http://localhost:5173` to view the site.
 
 ## Preview
 
-(Insert a screenshot or gif here showing your portfolio UI)
+![Portfolio Screenshot](./assests/screencapture-localhost-8080-2025-07-25-13_54_35.png)
+
 
 ---
 
