@@ -16,7 +16,7 @@ const Hero = () => {
             SCORCHZ
           </h1>
           <h2 className="text-2xl md:text-4xl font-light mb-6 text-muted-foreground">
-            Graphic Designer & Long-form Video Editor
+            Graphic Designer, Video Editor & Logo Designer
           </h2>
           <p className="text-lg md:text-xl mb-12 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Helping creators and brands stand out with stunning visuals and engaging edits.
