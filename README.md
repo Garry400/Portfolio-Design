@@ -65,7 +65,7 @@ Then open your browser and go to `http://localhost:5173` to view the site.
 
 ## Preview
 
-![Portfolio Screenshot](./src/assets/screencapture.png)
+![Portfolio Screenshot](./src/assets/home.png)
 
 
 ---
