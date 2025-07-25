@@ -5,20 +5,20 @@ const Contact = () => {
     {
       name: "Email",
       icon: Mail,
-      url: "mailto:scorchz@example.com",
-      handle: "scorchz@example.com"
+      url: "mailto:meenapushpendra400@gmail.com",
+      handle: "meenapushpendra400@gmail.com"
     },
     {
       name: "Instagram",
       icon: Instagram,
-      url: "https://instagram.com/scorchz",
-      handle: "@scorchz"
+      url: "https://www.instagram.com/meenapushpendra400/",
+      handle: "@meenapushpendra400"
     },
     {
       name: "Behance",
       icon: ExternalLink,
-      url: "https://behance.net/scorchz",
-      handle: "behance.net/scorchz"
+      url: "",
+      handle: "not account"
     }
   ];
 
@@ -67,7 +67,7 @@ const Contact = () => {
           </p>
           
           <a 
-            href="mailto:scorchz@example.com"
+            href="mailto:meenapushpendra400@gmail.com"
             className="btn-primary group inline-flex items-center gap-3"
           >
             Send me an email

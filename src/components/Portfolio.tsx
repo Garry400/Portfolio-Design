@@ -10,7 +10,7 @@ const Portfolio = () => {
   const portfolioItems = [
     {
       id: 1,
-      title: "Brand Identity Design",
+      title: "Graphic Designing",
       category: "Graphic Design",
       image: portfolio1,
       type: "design"
@@ -24,19 +24,19 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: "Corporate Branding",
-      category: "Graphic Design",
+      title: "Websites",
+      category: "UI/UX Design",
       image: portfolio3,
       type: "design"
     },
     {
       id: 4,
-      title: "Social Media Content",
+      title: "Logo & Branding",
       category: "Graphic Design",
       image: portfolio4,
       type: "design"
     },
-    {
+    /*{
       id: 5,
       title: "Color Grading Showcase",
       category: "Video Editing",
@@ -49,7 +49,7 @@ const Portfolio = () => {
       category: "Video Editing",
       image: portfolio6,
       type: "video"
-    }
+    }*/
   ];
 
   return (
