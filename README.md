@@ -74,8 +74,8 @@ Then open your browser and go to `http://localhost:5173` to view the site.
 
 For freelance work, collaborations, or design inquiries:
 
-- Instagram: [@scorchz.visuals](https://instagram.com/)
-- Email: your.email@example.com  
+- Instagram: [@meenapushpendra400](https://www.instagram.com/meenapushpendra400/)
+- Email: meenapushpendra400@gmail.com  
 - GitHub: [@Garry400](https://github.com/Garry400)
 
 ---
