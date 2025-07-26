@@ -1,56 +1,101 @@
 import { ExternalLink, Play } from "lucide-react";
+import { useState } from "react";
+import ProjectModal from "./ProjectModal";
 import portfolio1 from "@/assets/portfolio-1.jpg";
 import portfolio2 from "@/assets/portfolio-2.jpg";
 import portfolio3 from "@/assets/portfolio-3.jpg";
 import portfolio4 from "@/assets/portfolio-4.jpg";
 import portfolio5 from "@/assets/portfolio-5.jpg";
 import portfolio6 from "@/assets/portfolio-6.jpg";
+import brandIdentity1 from "@/assets/brand-identity-1.jpg";
+import brandIdentity2 from "@/assets/brand-identity-2.jpg";
+import gamingThumbnail1 from "@/assets/gaming-thumbnail-1.jpg";
+import gamingThumbnail2 from "@/assets/gaming-thumbnail-2.jpg";
+import corporateBranding1 from "@/assets/corporate-branding-1.jpg";
+import corporateBranding2 from "@/assets/corporate-branding-2.jpg";
+import socialMedia1 from "@/assets/social-media-1.jpg";
+import socialMedia2 from "@/assets/social-media-2.jpg";
+import colorGrading1 from "@/assets/color-grading-1.jpg";
+import colorGrading2 from "@/assets/color-grading-2.jpg";
+import motionGraphics1 from "@/assets/motion-graphics-1.jpg";
+import motionGraphics2 from "@/assets/motion-graphics-2.jpg";
 
 const Portfolio = () => {
+  const [selectedProject, setSelectedProject] = useState<any>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const portfolioItems = [
     {
       id: 1,
       title: "Graphic Designing",
       category: "Graphic Design",
       image: portfolio1,
-      type: "design"
+      type: "design" as const,
+      description: "Complete brand identity system including logo design, color palette, typography, and brand guidelines. Created a cohesive visual identity that reflects the client's values and resonates with their target audience.",
+      images: [brandIdentity1, brandIdentity2, portfolio1],
+      tools: ["Photoshop", "Illustrator", "Figma", "InDesign"]
     },
     {
       id: 2,
-      title: "Gaming Content Thumbnail",
+      title: "Video Projects",
       category: "Video Editing",
       image: portfolio2,
-      type: "video"
+      type: "video" as const,
+      description: "Eye-catching gaming thumbnails designed to maximize click-through rates. Featuring bold typography, dynamic compositions, and vibrant colors that stand out in YouTube feeds.",
+      images: [gamingThumbnail1, gamingThumbnail2, portfolio2],
+      tools: ["Photoshop", "After Effects", "Canva", "Figma"]
     },
     {
       id: 3,
       title: "Websites",
       category: "UI/UX Design",
       image: portfolio3,
-      type: "design"
+      type: "design" as const,
+      description: "Professional corporate branding package including logo design, business stationery, and brand implementation across various touchpoints. Designed to convey trust and professionalism.",
+      images: [corporateBranding1, corporateBranding2, portfolio3],
+      tools: ["Illustrator", "InDesign", "Photoshop", "Figma"]
     },
     {
       id: 4,
       title: "Logo & Branding",
       category: "Graphic Design",
       image: portfolio4,
-      type: "design"
+      type: "design" as const,
+      description: "Engaging social media graphics designed for various platforms including Instagram, Facebook, and LinkedIn. Consistent visual style that drives engagement and brand awareness.",
+      images: [socialMedia1, socialMedia2, portfolio4],
+      tools: ["Canva", "Photoshop", "Figma", "Illustrator"]
     },
     /*{
       id: 5,
       title: "Color Grading Showcase",
       category: "Video Editing",
       image: portfolio5,
-      type: "video"
+      type: "video" as const,
+      description: "Professional color grading work showcasing cinematic looks and mood enhancement. Transforming raw footage into visually stunning content with proper color correction and creative grading.",
+      images: [colorGrading1, colorGrading2, portfolio5],
+      tools: ["Premiere Pro", "DaVinci Resolve", "After Effects", "LUTs"]
     },
     {
       id: 6,
       title: "Motion Graphics",
       category: "Video Editing",
       image: portfolio6,
-      type: "video"
+      type: "video" as const,
+      description: "Dynamic motion graphics animations including logo reveals, kinetic typography, and visual effects. Created to enhance storytelling and add professional polish to video content.",
+      images: [motionGraphics1, motionGraphics2, portfolio6],
+      tools: ["After Effects", "Cinema 4D", "Premiere Pro", "Illustrator"]
     }*/
   ];
+
+  const handleProjectClick = (project: any) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
 
   return (
     <section id="portfolio" className="py-20 px-6 bg-secondary/30">
@@ -68,7 +113,8 @@ const Portfolio = () => {
           {portfolioItems.map((item, index) => (
             <div 
               key={item.id}
-              className="group bg-card rounded-xl overflow-hidden border border-border card-hover animate-scale-in"
+              onClick={() => handleProjectClick(item)}
+              className="group bg-card rounded-xl overflow-hidden border border-border card-hover animate-scale-in cursor-pointer"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="relative overflow-hidden">
@@ -101,6 +147,12 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
+        
+        <ProjectModal
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+          project={selectedProject}
+        />
       </div>
     </section>
   );
