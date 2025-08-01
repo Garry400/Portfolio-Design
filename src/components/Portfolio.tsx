@@ -1,14 +1,14 @@
 import { ExternalLink, Play } from "lucide-react";
 import { useState } from "react";
 import ProjectModal from "./ProjectModal";
-import portfolio1 from "@/assets/portfolio-1.jpg";
+import portfolio1 from "@/assets/portfolio-1.png";
 import portfolio2 from "@/assets/portfolio-2.jpg";
 import portfolio3 from "@/assets/portfolio-3.jpg";
 import portfolio4 from "@/assets/portfolio-4.jpg";
 import portfolio5 from "@/assets/portfolio-5.jpg";
 import portfolio6 from "@/assets/portfolio-6.jpg";
-import brandIdentity1 from "@/assets/brand-identity-1.jpg";
-import brandIdentity2 from "@/assets/brand-identity-2.jpg";
+import brandIdentity1 from "@/assets/brand-identity-1.png";
+import brandIdentity2 from "@/assets/brand-identity-2.png";
 import gamingThumbnail1 from "@/assets/gaming-thumbnail-1.jpg";
 import gamingThumbnail2 from "@/assets/gaming-thumbnail-2.jpg";
 import corporateBranding1 from "@/assets/corporate-branding-1.jpg";
@@ -32,8 +32,8 @@ const Portfolio = () => {
       image: portfolio1,
       type: "design" as const,
       description: "Complete brand identity system including logo design, color palette, typography, and brand guidelines. Created a cohesive visual identity that reflects the client's values and resonates with their target audience.",
-      images: [brandIdentity1, brandIdentity2, portfolio1],
-      tools: ["Photoshop", "Illustrator", "Figma", "InDesign"]
+      images: [portfolio1, brandIdentity1, brandIdentity2],
+      tools: ["Photoshop", "Illustrator"]
     },
     {
       id: 2,
@@ -43,7 +43,7 @@ const Portfolio = () => {
       type: "video" as const,
       description: "Eye-catching gaming thumbnails designed to maximize click-through rates. Featuring bold typography, dynamic compositions, and vibrant colors that stand out in YouTube feeds.",
       images: [gamingThumbnail1, gamingThumbnail2, portfolio2],
-      tools: ["Photoshop", "After Effects", "Canva", "Figma"]
+      tools: ["Premier Pro", "After Effects", "DaVinci", "CapCut"]
     },
     {
       id: 3,
@@ -53,9 +53,9 @@ const Portfolio = () => {
       type: "design" as const,
       description: "Professional corporate branding package including logo design, business stationery, and brand implementation across various touchpoints. Designed to convey trust and professionalism.",
       images: [corporateBranding1, corporateBranding2, portfolio3],
-      tools: ["Illustrator", "InDesign", "Photoshop", "Figma"]
+      tools: ["Figma"]
     },
-    {
+    /*{
       id: 4,
       title: "Logo & Branding",
       category: "Graphic Design",
@@ -65,7 +65,7 @@ const Portfolio = () => {
       images: [socialMedia1, socialMedia2, portfolio4],
       tools: ["Canva", "Photoshop", "Figma", "Illustrator"]
     },
-    /*{
+    {
       id: 5,
       title: "Color Grading Showcase",
       category: "Video Editing",
