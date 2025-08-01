@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="text-center z-10 max-w-4xl mx-auto">
         <div className="animate-fade-in">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 text-gradient">
-            SCORCHZ
+            GARRY
           </h1>
           <h2 className="text-2xl md:text-4xl font-light mb-6 text-muted-foreground">
             Graphic Designer, Video Editor & Logo Designer

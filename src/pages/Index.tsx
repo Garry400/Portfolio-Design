@@ -21,7 +21,7 @@ const Index = () => {
       <footer className="py-8 px-6 border-t border-border bg-card">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-muted-foreground">
-            © 2024 Scorchz. All rights reserved. | Designed with passion for creativity.
+            © 2024 Garry400. All rights reserved. | Designed with passion for creativity.
           </p>
         </div>
       </footer>

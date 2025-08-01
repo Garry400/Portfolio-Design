@@ -1,9 +1,9 @@
 
-# Scorchz Portfolio
+# Garry's Portfolio
 
 A modern and responsive portfolio website built to showcase my design and development work, including projects, visuals, and creative ideas.
 
-> Designed and developed by Scorchz
+> Designed and developed by Garry
 
 ---
 

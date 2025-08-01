@@ -8,7 +8,7 @@ const Testimonials = () => {
       role: "Content Creator",
       avatar: "AR",
       rating: 5,
-      text: "Scorchz transformed my YouTube channel with incredible thumbnails and video edits. My engagement rates have doubled since working with them!"
+      text: "Garry transformed my YouTube channel with incredible thumbnails and video edits. My engagement rates have doubled since working with them!"
     },
     {
       id: 2,
@@ -16,7 +16,7 @@ const Testimonials = () => {
       role: "Business Owner",
       avatar: "SC",
       rating: 5,
-      text: "The brand identity Scorchz created for my business perfectly captured our vision. Professional, creative, and delivered on time."
+      text: "The brand identity Garry created for my business perfectly captured our vision. Professional, creative, and delivered on time."
     },
     {
       id: 3,
@@ -24,7 +24,7 @@ const Testimonials = () => {
       role: "Influencer",
       avatar: "MJ",
       rating: 5,
-      text: "Working with Scorchz was a game-changer. Their video editing skills brought my content to the next level. Highly recommended!"
+      text: "Working with Garry was a game-changer. Their video editing skills brought my content to the next level. Highly recommended!"
     }
   ];
 

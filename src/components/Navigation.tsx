@@ -45,7 +45,7 @@ const Navigation = () => {
             onClick={scrollToTop}
             className="text-2xl font-bold text-gradient hover:scale-105 transition-transform duration-300"
           >
-            SCORCHZ
+            GARRY
           </button>
 
           {/* Desktop Navigation */}
